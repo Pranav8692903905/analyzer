@@ -11,3 +11,11 @@ INFO:     127.0.0.1:50472 - "GET /api/admin/stats HTTP/1.1" 200 OK
 INFO:     157.119.202.59:0 - "POST /api/upload-resume HTTP/1.1" 200 OK
 INFO:     127.0.0.1:44778 - "GET / HTTP/1.1" 200 OK
 INFO:     127.0.0.1:44792 - "GET /api/admin/stats HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'resume_parser.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [114054]
+INFO:     Started server process [118931]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
