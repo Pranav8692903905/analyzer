@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-// Use relative path so Vite proxy forwards to backend
+// Use same-origin path so Vite proxy handles routing
 const API_URL = '/api';
 
 export interface ResumeAnalysis {
@@ -55,12 +55,7 @@ export const uploadResume = async (file: File): Promise<ResumeAnalysis> => {
 
   console.log('Uploading to:', `${API_URL}/upload-resume`);
   try {
-    const response = await axios.post(`${API_URL}/upload-resume`, formData, {
-      headers: {
-        'Content-Type': 'multipart/form-data',
-      },
-    });
-
+    const response = await api.post('/upload-resume', formData);
     return response.data;
   } catch (error: any) {
     console.error('Upload error:', {
