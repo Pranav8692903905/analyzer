@@ -38,12 +38,12 @@ for i in {1..40}; do
   sleep 0.25
 done
 
-echo "==> Starting frontend (Vite on :5173) ..."
+echo "==> Starting frontend (Next.js on :3000) ..."
 pushd "$ROOT_DIR/frontend" >/dev/null
 
 # Open browser if $BROWSER is available
 if [[ -n "${BROWSER:-}" ]]; then
-  "$BROWSER" "http://localhost:5173" >/dev/null 2>&1 || true
+  "$BROWSER" "http://localhost:3000" >/dev/null 2>&1 || true
 fi
 
 # Cleanup backend on exit

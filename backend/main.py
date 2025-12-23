@@ -98,7 +98,7 @@ app.add_middleware(
 async def root():
     return {"message": "Smart Resume Analyzer API", "status": "running"}
 
-@app.post("/api/upload-resume")
+@app.post("/upload-resume")
 async def upload_resume(file: UploadFile = File(...)):
     """Upload and analyze resume"""
     try:
@@ -172,7 +172,7 @@ async def upload_resume(file: UploadFile = File(...)):
         logger.exception("Unhandled error while analyzing resume")
         raise HTTPException(status_code=500, detail="Internal error while analyzing the resume") from e
 
-@app.get("/api/admin/stats")
+@app.get("/admin/stats")
 async def get_stats():
     """Get admin statistics"""
     try:
@@ -181,7 +181,7 @@ async def get_stats():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/api/admin/resumes")
+@app.get("/admin/resumes")
 async def get_all_resumes():
     """Get all resume data for admin"""
     try:
@@ -190,7 +190,7 @@ async def get_all_resumes():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/api/courses/{field}")
+@app.get("/courses/{field}")
 async def get_courses(field: str):
     """Get courses for a specific field"""
     try:

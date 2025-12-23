@@ -1,0 +1,20 @@
+nohup: ignoring input
+==> Checking MySQL (resume-mysql) ...
+MySQL container already running
+==> Starting backend (FastAPI on :8000) ...
+==> Starting frontend (Next.js on :3000) ...
+
+> frontend@0.0.0 dev
+> next dev
+
+   ▲ Next.js 15.5.9
+   - Local:        http://localhost:3000
+   - Network:      http://10.0.1.53:3000
+
+ ✓ Starting...
+ ✓ Ready in 1872ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.7s (832 modules)
+ GET / 200 in 6209ms
+[?25h
+==> Stopping backend (PID 40553)
