@@ -7,3 +7,11 @@ INFO:     Application startup complete.
 INFO:     127.0.0.1:44292 - "GET / HTTP/1.1" 200 OK
 INFO:     157.119.202.59:0 - "GET / HTTP/1.1" 200 OK
 INFO:     157.119.202.59:0 - "POST /upload-resume HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [41798]
+INFO:     Started server process [43608]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
